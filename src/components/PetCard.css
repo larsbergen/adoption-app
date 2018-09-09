@@ -1,11 +1,13 @@
 .card {
+    border: green;
+    background-color: green;
 
 }
 .img-container {
 
 }
 .content {
-
+color: red
 }
 .remove {
     

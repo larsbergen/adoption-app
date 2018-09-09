@@ -9,7 +9,7 @@ class NavBar extends Component {
     this.state = {
         currentlySelectedTab: 0,
     }
-    this.navBarConfig=[{name: 'Home', link:'/'},{name: 'Saved Pets', link:'/savedpets'}];
+    this.navBarConfig=[{name: 'Home', link:'/'},{name: 'Search', link:'/search'},{name: 'Saved Pets', link:'/savedpets'}];
     }
 
 

@@ -22,14 +22,16 @@ app.get("/", function(req, res) {
     res.sendFile(path.join(__dirname, "./build/index.html"));
 });
 
-app.post('/something', function(req, res) {
+app.post('/', function(req, res) {
     console.log(req.body.searchTerm);
     //const{ body:{ searchTerm } } = req;
     const searchTerm = 'dog';
-    const url = "http://api.petfinder.com/pet.find?format=json&key=f2ed227e8b882e795297e6092f7a50d4&location=85203&animal=" + searchTerm;
+    const zipSearch = '85203'
+    const url = `http://api.petfinder.com/pet.find?format=json&key=f2ed227e8b882e795297e6092f7a50d4&location=${zipSearch}&animal=${searchTerm}`;
     
     axios.get(url).then((response)=> {
         res.json(response.data.petfinder.pets.pet);
+        console.log(response.data.petfinder.pets.pet);
     })
     .catch(err => {
         if (err) throw err
