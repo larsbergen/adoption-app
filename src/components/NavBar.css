@@ -11,6 +11,7 @@
 .navbar-links {
     display: flex;
     margin-bottom: 1%;
+    margin-left: 27%;
     width: 40%;
     justify-content: space-evenly;
     align-self: flex-end;
