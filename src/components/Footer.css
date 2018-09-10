@@ -8,6 +8,8 @@
     color: white;
     text-align: center;
     display: flex;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
 }
 .social-media-links {
     margin-top: 1%;
