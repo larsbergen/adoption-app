@@ -10,6 +10,16 @@
     display: flex;
 }
 .social-media-links {
-    margin-top: 1.5%;
+    margin-top: 1%;
     margin-left: 48%
+}
+.socialmedia-fb {
+    height: 30px;
+    width: 30px;
+    padding-right: 2px;
+}
+.socialmedia-tw {
+    height: 30px;
+    width: 30px;
+    padding-left: 2px;
 }

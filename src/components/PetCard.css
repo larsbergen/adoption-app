@@ -1,14 +1,13 @@
 .card {
-    border: green;
-    background-color: green;
+    background-color: rgb(13, 156, 175);
 
 }
-.img-container {
+/* .img-container {
 
-}
+} */
 .content {
-color: red
+color: white
 }
-.remove {
+/* .remove {
     
-}
+} */
