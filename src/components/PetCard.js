@@ -1,5 +1,5 @@
 import React from "react";
-import './PetCard.css'
+import './PetCard.css';
 const PetCard = props => (
   <div className="card">
     <div className="img-container">

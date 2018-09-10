@@ -17,12 +17,12 @@ app.use(cors());
     
 
 
-// Add routes, both API and view
-app.get("/", function(req, res) {
-    res.sendFile(path.join(__dirname, "./build/index.html"));
-});
+// // Add routes, both API and view
+// app.get("/", function(req, res) {
+//     res.sendFile(path.join(__dirname, "./build/index.html"));
+// });
 
-app.post('/something', function(req, res) {
+app.post('/', function(req, res) {
     console.log(req.body.searchTerm);
     //const{ body:{ searchTerm } } = req;
     const searchTerm = 'dog';
