@@ -10,15 +10,16 @@ class Home extends Component {
                 <form className="searchInput">
                     <div className="search-group">
                         <select type="input" className="form-control" id="searchTerm" placeholder="Choose search term">
-                        <option >Animal Type</option>
-                        <option value="dog">Dogs</option>
-                        <option value="cat">Cats</option>
-                        <option value="smallfurry">Small & Furry</option>
-                        <option value="reptile">Scales, Fins, & Other</option>
-                        <option value="bird">Birds</option>
-                        <option value="horse">Horses</option>
-                        <option value="barnyard">Barnyard</option>
-                        
+                        <option>Animal Type</option>
+                        <option>Dogs</option>
+                        <option>Cats</option>
+                        <option>Rabbits</option>
+                        <option>Small & Furry</option>
+                        <option>Scales, Fins, & Other</option>
+                        <option>Birds</option>
+                        <option>Horses</option>
+                        <option>Barnyard</option>
+
 
                         </select>
                         <input type="input" className="form-control" id="zipSearch" placeholder="Zip Code"></input>
