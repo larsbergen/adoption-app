@@ -6,6 +6,7 @@ const PORT = process.env.PORT || 3001;
 const axios = require('axios');
 const cors = require('cors');
 const path= require('path');
+const routes = require('./routes')
 // Define middleware here
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
@@ -15,26 +16,8 @@ app.use(express.static("public"));
 app.use(cors());
 
     
+app.use(routes);
 
-
-// Add routes, both API and view
-app.get("/", function(req, res) {
-    res.sendFile(path.join(__dirname, "./build/index.html"));
-});
-
-app.post('/something', function(req, res) {
-    console.log(req.body.searchTerm);
-    //const{ body:{ searchTerm } } = req;
-    const searchTerm = 'dog';
-    const url = "http://api.petfinder.com/pet.find?format=json&key=f2ed227e8b882e795297e6092f7a50d4&location=85203&animal=" + searchTerm;
-    
-    axios.get(url).then((response)=> {
-        res.json(response.data.petfinder.pets.pet);
-    })
-    .catch(err => {
-        if (err) throw err
-    });
-});
 // Connect to the Mongo DB
 mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/petAdoption", function() {
     // Start the API server
