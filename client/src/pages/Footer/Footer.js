@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import './Footer.css';
+import './Footer/Footer.css';
 var Facebook = require('./images/faceBook-blue.png');
 var Twitter = require('./images/tw-bl-sm.png');
 class Footer extends Component {

@@ -1,6 +1,7 @@
 import React from "react";
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
-import PetCard from './components/PetCard'
+import { BrowserRouter, Route, Switch } from "react-router-dom";
+import Home from './Pages/Home/Home';
+import Saved from './Pages/Saved/Saved';
 
 // import Pets from "./pages/Pets";
 // import Detail from "./pages/Detail";
@@ -8,7 +9,7 @@ import PetCard from './components/PetCard'
 // import Nav from "./components/Nav";
 
 const App = () => (
-  <Router>
+  <BrowserRouter>
     <div>
       {/* <Nav /> */}
       <Switch>
@@ -19,7 +20,7 @@ const App = () => (
         {/* <Route component={NoMatch} /> */}
       </Switch>
     </div>
-  </Router>
+  </BrowserRouter>
 );
 
 export default App;
