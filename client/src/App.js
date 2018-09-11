@@ -12,8 +12,9 @@ const App = () => (
     <div>
       {/* <Nav /> */}
       <Switch>
-        <Route exact path="/" component={PetCard} />
-        <Route exact path="/pets" component={PetCard} />
+        <Route exact path="/" component={Home} />
+        <Route exact path="/pets" component={App} />
+        <Route exact path="/savedpets" component={Saved} />
         {/* <Route exact path="/pets/:id" component={Detail} /> */}
         {/* <Route component={NoMatch} /> */}
       </Switch>
